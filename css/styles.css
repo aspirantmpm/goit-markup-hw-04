@@ -133,12 +133,14 @@ p {
 }
 
 .hero {
-  background-image: linear-gradient(to top, var(--hero-overlay)),
-   url(../images/bg.jpg);
+    background-image:
+     linear-gradient(to top, var(--hero-overlay)),   
+  url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 1600px;
+  max-width: 1600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
