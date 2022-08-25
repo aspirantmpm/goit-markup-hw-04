@@ -126,6 +126,30 @@ p {
   color: var(--brand-color);
 }
 
+.mail::before {  
+  content: "";
+  display: inline-block;
+  width: 16px;
+height: 12px;
+margin-right: 10px;
+  background-image: url(../images/icons/envelope.svg);  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.tel::before {  
+  content: "";
+  display: inline-block;
+  width: 10px;
+height: 16px;
+margin-right: 10px;
+  background-image: url(../images/icons/smartphone.svg);  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /* Hero */
 
 .bg-hero {
@@ -133,10 +157,11 @@ p {
 }
 
 .hero {
-    background-image:
-     linear-gradient(to top, var(--hero-overlay)),   
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),   
   url(../images/bg.jpg);
-  background-repeat: no-repeat;
+   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   max-width: 1600px;
@@ -226,8 +251,35 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--font-color);
-  margin-top: 0;
+  margin-top: 30px;
   margin-bottom: 10px;
+}
+
+.list-item-benefits::before {
+  content: "";
+  display: block;
+  height: 120px;
+  border: 4px;
+  background-color: var(--team-color);  
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.list-item-benefits:nth-child(1)::before  {
+background-image: url(../images/icons/benefits/antenna.svg);
+}
+
+.list-item-benefits:nth-child(2)::before  {
+background-image: url(../images/icons/benefits/clock.svg);
+}
+
+.list-item-benefits:nth-child(3)::before  {
+background-image: url(../images/icons/benefits/diagram.svg);
+}
+
+.list-item-benefits:nth-child(4)::before  {
+background-image: url(../images/icons/benefits/astronaut.svg);
 }
 
 .benefits-item {
