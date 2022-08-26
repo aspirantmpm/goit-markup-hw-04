@@ -11,6 +11,7 @@
   --btn-hover-color: #188ce8;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --border-color: #ECECEC;
+  --client-color: #AFB1B8;
 }
 
 body {
@@ -119,6 +120,15 @@ p {
   letter-spacing: 0.02em;
   color: var(--text-color);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.mail {  
+  width: 16px;
+  height: 12px;
+  fill: var(--text-color);
+  margin-right: 10px;
 }
 
 .header-contact:hover,
@@ -126,28 +136,18 @@ p {
   color: var(--brand-color);
 }
 
-.mail::before {  
-  content: "";
-  display: inline-block;
-  width: 16px;
-height: 12px;
-margin-right: 10px;
-  background-image: url(../images/icons/envelope.svg);  
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.mail:hover,
+.mail:focus,
+.tel:hover,
+.tel:focus {
+  fill: var(--brand-color);
 }
 
-.tel::before {  
-  content: "";
-  display: inline-block;
+.tel {  
   width: 10px;
-height: 16px;
-margin-right: 10px;
-  background-image: url(../images/icons/smartphone.svg);  
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  height: 16px;
+  fill: var(--text-color);
+  margin-right: 10px;
 }
 
 /* Hero */
@@ -324,6 +324,36 @@ background-image: url(../images/icons/benefits/astronaut.svg);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+/* clients */
+
+.clients {
+  
+  }
+
+.list-item.icon {
+  margin: 0;
+  padding: 0;
+  row-gap: 30px;
+}
+
+.list-item.icon:not(:last-child) {
+margin-right: 30px;
+}
+
+.client {
+  width: 106px;
+  height: 60px;
+fill: var(--client-color);
+
+}
+
+.icon {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--client-color);
+  border-radius: 4px;     
 }
 
 /* Projects */
