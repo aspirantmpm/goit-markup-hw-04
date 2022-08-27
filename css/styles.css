@@ -129,26 +129,18 @@ p {
 .mail {
   width: 16px;
   height: 12px;
-  
   margin-right: 10px;
 }
 
 .header-contact:hover,
 .header-contact:focus {
   color: var(--brand-color);
-   fill: var(--brand-color);
-}
-
-.mail:hover,
-.mail:focus,
-.tel:hover,
-.tel:focus {
- 
+  fill: var(--brand-color);
 }
 
 .tel {
   width: 10px;
-  height: 16px; 
+  height: 16px;
   margin-right: 10px;
 }
 
@@ -299,6 +291,18 @@ p {
   margin-right: 30px;
 }
 
+.list-team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list-team-item {
+  background-color: var(--main-color);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12),
+    0 1px 1px 0 rgba(0, 0, 0, .14),
+    0 2px 1px 0 rgba(0, 0, 0, .20);
+}
+
 .team-card-title {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -311,6 +315,12 @@ p {
   letter-spacing: 0.03em;
   color: var(--text-color);
   padding-bottom: 16px;
+}
+
+.list-item-project:hover {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .12),
+    0 4px 4px 0 rgba(0, 0, 0, .06),
+    1px 4px 6px 0 rgba(0, 0, 0, .16);
 }
 
 /* socials */
@@ -505,7 +515,7 @@ img {
   text-transform: uppercase;
   color: var(--main-color);
   margin-bottom: 20px;
-} 
+}
 
 .footer-block {
   display: flex;
@@ -519,6 +529,7 @@ img {
 .footer-socials {
   margin-top: 12px;
 }
+
 .socials-footer {
   display: flex;
   fill: var(--main-color);
