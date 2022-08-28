@@ -177,7 +177,17 @@ p {
   margin-top: 0;
 }
 
-.btn,
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
 .hero-btn {
   font-weight: 700;
   font-size: 16px;
@@ -213,6 +223,8 @@ p {
 .btn:focus {
   background-color: var(--brand-color);
   color: var(--main-color);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12),
+    0 1px 2px 0 rgba(0, 0, 0, 0.08);
 }
 
 /* Sections */
@@ -253,9 +265,10 @@ p {
 }
 
 .benefit-icon-area {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
-  padding-top: 25px;
   background-color: var(--team-color);
   border-radius: 4px;
 }
@@ -276,7 +289,7 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--font-color);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .list-item-benefits {
@@ -314,7 +327,11 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.project-link {
+  text-decoration: none;
 }
 
 .list-item-project:hover {
@@ -333,21 +350,18 @@ p {
   justify-content: center;
 }
 
-.list-item.icon-area {
-  margin: 0;
-  width: 44px;
-  height: 44px;
-  display: flex;
-}
-
 .list-item.icon-area:not(:last-child) {
   margin-right: 10px;
 }
 
 .social {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--main-color);
   border-radius: 50%;
-  padding: 12px;
   fill: var(--client-color);
 }
 
@@ -368,16 +382,28 @@ p {
   margin-right: 30px;
 }
 
-.client-logo {
+.list-item.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
+}
+
+.client {
   fill: var(--client-color);
+
   border: 1px solid var(--client-color);
   border-radius: 4px;
 }
 
-.client-logo:hover,
-.client-logo:focus {
+.client-logo {
+  width: 170px;
+  height: 92px;
+}
+
+.client:hover,
+.client:focus {
   border: 1px solid var(--brand-color);
   fill: var(--brand-color);
 }
@@ -519,6 +545,7 @@ img {
 
 .footer-block {
   display: flex;
+  align-items: baseline;
 }
 
 .contact-info {
@@ -532,15 +559,21 @@ img {
 
 .socials-footer {
   display: flex;
+
   fill: var(--main-color);
-  margin-top: 20px;
-  padding-left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .social-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--footer-icon-color);
   border-radius: 50%;
-  padding: 12px;
+  width: 44px;
+  height: 44px;
   fill: var(--main-color);
 }
 
